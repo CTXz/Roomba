@@ -144,6 +144,7 @@ void Roomba::digitLeds(uint8_t digit3, uint8_t digit2, uint8_t digit1, uint8_t d
   _serial->write(digit1);
   _serial->write(digit0);
 }
+#endif
 
 void Roomba::digitLedsASCII(uint8_t digit3, uint8_t digit2, uint8_t digit1, uint8_t digit0)
 {
@@ -153,7 +154,6 @@ void Roomba::digitLedsASCII(uint8_t digit3, uint8_t digit2, uint8_t digit1, uint
   _serial->write(digit1);
   _serial->write(digit0);
 }
-#endif
 
 void Roomba::digitalOut(uint8_t out)
 {
